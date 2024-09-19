@@ -9,7 +9,7 @@ pipeline {
     }
     stage ("Git checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/yeshwanthlm/starbucks.git'
+                git branch: 'main', url: 'https://github.com/gspvsr/starbucks.git'
             }
     }
     stages {
