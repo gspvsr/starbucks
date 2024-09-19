@@ -7,6 +7,11 @@ pipeline {
     environment {
         SCANNER_HOME=tool 'sonar-scanner'
     }
+    stage ("Git checkout") {
+            steps {
+                git branch: 'main', url: 'https://github.com/yeshwanthlm/starbucks.git'
+            }
+    }
     stages {
         stage ("clean workspace") {
             steps {
